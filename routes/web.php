@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cek-nama', 'PageMiddleware@hallo')->middleware("filterName");
